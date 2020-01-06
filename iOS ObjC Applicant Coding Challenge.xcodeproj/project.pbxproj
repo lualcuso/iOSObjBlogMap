@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C438659223C2EA7D001B5928 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438659123C2EA7D001B5928 /* CoreLocation.framework */; };
 		C4764B5123B021A900FAE7E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4764B5023B021A900FAE7E7 /* AppDelegate.m */; };
 		C4764B5423B021A900FAE7E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4764B5323B021A900FAE7E7 /* SceneDelegate.m */; };
 		C4764B5723B021A900FAE7E7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4764B5623B021A900FAE7E7 /* FirstViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C438659123C2EA7D001B5928 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4764B4C23B021A900FAE7E7 /* iOS ObjC Applicant Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS ObjC Applicant Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4764B4F23B021A900FAE7E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4764B5023B021A900FAE7E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C438659223C2EA7D001B5928 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C438659023C2EA7D001B5928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C438659123C2EA7D001B5928 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4764B4323B021A900FAE7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +109,7 @@
 				C4764B6D23B021AC00FAE7E7 /* iOS ObjC Applicant Coding ChallengeTests */,
 				C4764B7823B021AC00FAE7E7 /* iOS ObjC Applicant Coding ChallengeUITests */,
 				C4764B4D23B021A900FAE7E7 /* Products */,
+				C438659023C2EA7D001B5928 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

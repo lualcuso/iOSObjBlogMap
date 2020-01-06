@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
     @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
     @property (nonatomic, weak) IBOutlet UILabel *descriptionLabel;
     @property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+    @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+    @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @end
 
 NS_ASSUME_NONNULL_END

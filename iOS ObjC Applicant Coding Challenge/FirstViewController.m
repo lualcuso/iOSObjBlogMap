@@ -61,7 +61,9 @@
     NSDictionary *cellElement = [self->blogEntries objectAtIndex:indexPath.row];
 
     cell.titleLabel.text = cellElement[@"title"];
-    cell.descriptionLabel.text = cellElement[@"description"];
+    cell.descriptionLabel.text = cellElement[@"description"]? cellElement[@"description"] : @"No description available";
+    cell.authorLabel.text = cellElement[@"author"]? cellElement[@"author"] : @"No author available";
+    cell.dateLabel.text = cellElement[@"article_date"]? cellElement[@"article_date"] : @"No date available";
     cell.thumbnailImageView.image = nil;
 
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/%@", @"https://bv-content.beenverified.com/fit-in/60x/filters:autojpg()/", cellElement[@"image"]]];
@@ -91,7 +93,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 120;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
