@@ -18,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL *newUrl = [NSURL URLWithString:_entryURL];
+    NSString *urlTransformed = [_entryURL stringByReplacingOccurrencesOfString:@"ios.html"
+    withString:@""];
+    urlTransformed = [_entryURL stringByReplacingOccurrencesOfString:@"http"
+    withString:@"https"];
+    NSURL *newUrl = [NSURL URLWithString:urlTransformed];
     
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:newUrl];
     NSLog(@"%@",  _entryURL);
